@@ -1,0 +1,129 @@
+.footer-balanced {
+    background: var(--bg-dark);
+    color: white;
+    padding-top: 60px;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    padding-bottom: 50px;
+}
+
+.footer-brand-area .logo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-bio {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    max-width: 320px;
+}
+
+.social-row-modern {
+    display: flex;
+    gap: 20px;
+}
+
+.social-row-modern a {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.social-row-modern a:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.footer-nav-simple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.nav-column-group h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-column-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-column-group a {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.nav-column-group a:hover {
+    color: var(--primary);
+    transform: translateX(3px);
+}
+
+.footer-bottom-balanced {
+    padding: 24px 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btm-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btm-flex p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.payment-row-mini {
+    display: flex;
+    gap: 20px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.payment-row-mini span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 968px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-nav-simple {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .btm-flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-nav-simple {
+        grid-template-columns: 1fr;
+    }
+}
