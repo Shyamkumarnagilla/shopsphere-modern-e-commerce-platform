@@ -4,7 +4,7 @@
 
 .hero-modern {
     background: white;
-    padding: var(--space-lg) 0 var(--space-xl);
+    padding: var(--space-md) 0 var(--space-xl);
     position: relative;
     overflow: hidden;
 }
