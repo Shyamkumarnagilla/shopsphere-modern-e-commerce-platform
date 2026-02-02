@@ -1,5 +1,10 @@
 .cart-page-modern {
-    padding-top: calc(var(--nav-height) + 20px);
+    padding-top: calc(var(--nav-height) + 15px);
+    padding-bottom: 80px;
+}
+
+.checkout-page-modern {
+    padding-top: calc(var(--nav-height) + 15px);
     padding-bottom: 80px;
 }
 

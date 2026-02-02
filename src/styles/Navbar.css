@@ -5,18 +5,20 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: white;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border);
-    padding: 0 var(--space-sm);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0;
 }
 
 .navbar.scrolled {
-    padding: 5px 0;
-    height: calc(var(--nav-height) - 10px);
-    box-shadow: var(--shadow-md);
+    height: calc(var(--nav-height) - 12px);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
 }
 
 .nav-container {
@@ -55,7 +57,7 @@
     flex: 1;
     max-width: 600px;
     position: relative;
-    margin: 0 var(--space-lg);
+    margin: 0 30px;
 }
 
 .search-bar input {
