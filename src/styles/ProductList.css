@@ -1,6 +1,6 @@
 .product-list-page-modern,
 .wishlist-page {
-    padding-top: calc(var(--nav-height) + 15px);
+    padding-top: calc(var(--nav-height) + 5px);
     padding-bottom: var(--space-xl);
 }
 

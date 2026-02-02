@@ -50,7 +50,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`navbar ${scrolled ? 'scrolled glass' : ''}`}>
+        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
                 <Link to="/" className="logo">
                     <div className="logo-icon">S</div>
